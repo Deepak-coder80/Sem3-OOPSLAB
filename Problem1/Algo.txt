@@ -1,0 +1,13 @@
+Problem Statement: To write a cpp program to find a number is prime or not
+
+
+Algorithm:
+
+	1.Start
+	2.Read the Number
+	3.Run loop upto half of the number. 
+		3.1 If any number can divide the input Number , print the
+		    number is not prime and break the loop.
+		3.2 else print the number is prime
+	4.Stop
+ 
