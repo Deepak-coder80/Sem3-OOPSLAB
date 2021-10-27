@@ -24,7 +24,7 @@ int  main(){
     //read the numbers 
     cout<<"Enter the two numbers";
     cin>>num1>>num2;
-
+    //fucntion calliing
     gcd = findGCD(num1,num2);
 
     cout<<"GCD of "<<num1 <<" and "<<num2<<" is "<<gcd<<endl;
