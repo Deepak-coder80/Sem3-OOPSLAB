@@ -5,9 +5,13 @@ Algorithm:
 
 	1.Start
 	2.Read the Number
-	3.Run loop upto half of the number. 
-		3.1 If any number can divide the input Number , print the
-		    number is not prime and break the loop.
-		3.2 else print the number is prime
-	4.Stop
+	3. Assign the boolean value isPrime to true;
+	4.Run loop from 2 upto half of the number. 
+		3.1 If any number can divide the input Number , change the 
+		boolean value  isPrime to false and break the loop.
+		
+	5. check whether the value of isPrime is false
+		5.1 if it is false then print not a prime number
+		5.2 else print not a prime number
+	5.Stop
  
