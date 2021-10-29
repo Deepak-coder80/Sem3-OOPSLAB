@@ -9,17 +9,30 @@ using namespace std;
 
 class Arthematic{
     public:
-        void addition(int a, int b){
-            cout<<"Addition Result = "<<(a+b)<<endl;
+        int a,b;
+        float result;
+        void input(){
+            cout<<"Enter two number : ";
+            cin>>a>>b;
         }
-        void substraction(int a, int b){
-            cout<<"Addition Result = "<<(a-b)<<endl;
+        void addition(){
+            result=a+b;
         }
-        void multiplication(int a, int b){
-            cout<<"Addition Result = "<<(a*b)<<endl;
+        void substraction(){
+            result=a-b;
+           
         }
-        void division(int a, int b){
-            cout<<"Addition Result = "<<(a/b)<<endl;
+        void multiplication(){
+            result = a*b;
+            
+        }
+        void division(){
+            result = (float)a/b;
+            
+        }
+
+        void display(){
+            cout<<"Result = "<<result<<endl;
         }
 };
 
@@ -27,32 +40,34 @@ int main(){
     //object for Arthematic class
     Arthematic obj;
 
-    int num1,num2,choice;
+    int choice;
 
     //read the number
-    cout<<"Enter two number : ";
-    cin>>num1>>num2;
-
+    obj.input();
     //read choice
     cout<<"select the Operator:"<<endl;
     cout<<"\tEnter 1 for Addition\n\tEnter 2 for substraction"<<endl;
-    cout<<"\tEnter 3 for multiplication\n\tEnter 5 for division"<<endl;
+    cout<<"\tEnter 3 for multiplication\n\tEnter 4 for division"<<endl;
     cout<<"Enter Here:";
     cin>>choice;
 
     switch (choice)
     {
     case 1:
-        obj.addition(num1,num2);
+        obj.addition();
+        obj.display();
         break;
     case 2:
-        obj.substraction(num1,num2);
+        obj.substraction();
+        obj.display();
         break;
     case 3:
-        obj.multiplication(num1,num2);
+        obj.multiplication();
+        obj.display();
         break;
     case 4:
-        obj.division(num1,num2);
+        obj.division();
+        obj.display();
         break;
     
     default:
