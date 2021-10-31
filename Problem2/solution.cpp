@@ -14,9 +14,10 @@ int findGCD(int num1,int num2){
 
     if(num1>num2){
         return findGCD(num1%num2,num2);
-    }else {
-        return findGCD(num1,num2%num1);
     }
+        
+    return findGCD(num1,num2%num1);
+    
 }
 
 int  main(){
