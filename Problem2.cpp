@@ -11,16 +11,22 @@ class Day{
     public:
         int day,month,year;
         string mm;
-        void input(){
-            cout<<"Enter day : ";
+        void input();
+
+        void display();
+
+        
+};
+
+void Day::input(){
+     cout<<"Enter day : ";
             cin>>day;
             cout<<"Enter month : ";
             cin>>month;
             cout<<"Enter year : ";
             cin>>year;
-        }
-
-        void display(){
+}
+void Day::display(){
             switch (month)
             {
             case 1:
@@ -67,7 +73,6 @@ class Day{
 
             cout<<day<<"  "<<mm<<"  "<<year<<endl;
         }
-};
 
 int main(){
     Day obj;
