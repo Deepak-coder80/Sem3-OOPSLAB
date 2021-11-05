@@ -1,0 +1,35 @@
+Problem Statement : A phone number, such as
+(212) 767-8900, can be thought of as having three parts: the area code (212),
+the exchange (767), and the number (8900). Write a C++ program that uses a
+structure to store these three parts of a phone number separately. Call the structure
+phone. Create two structure variables of type phone. Initialize one, and have
+the user input a number for the other one. Then display both numbers. The
+interchange might look like this:
+ 
+
+
+Enter your area code, exchange, and number: 415 555 1212
+
+
+My number is (212) 767-8900
+
+
+Your number is (415) 555-1212
+
+
+
+ALGORITHM:
+
+    1.Start    
+    2.Define a structure named Phone with members
+      area_code,exchange and number
+    3.Create 2 structure variables phone1 and phone2.
+    4.Assign
+        4.1. area_code of phone1 as 212
+        4.2. exchange of phone1 as 767
+        4.3. number of phone1 as 8900
+    5.Read the area_code,exchange and number of phone2
+      from user.
+    6.Print both structure variables in the format
+     (area_code) exchange-number in each line
+    7.Stop
