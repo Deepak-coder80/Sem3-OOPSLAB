@@ -1,0 +1,53 @@
+Problem Statement:Define a class Date that
+contains details like year, month and date. Write a C++ program to check the
+validity of the date that you enter and display the next date.
+
+
+Sample
+1 : 02/ 03/ 1990 
+
+
+Valid,   Next date: 03/03/1990
+
+
+Sample
+2:    29/02/1989  
+
+
+Not Valid
+
+
+ALGORITHM:
+    1.Start
+    2.Define a class named Date with members
+      day,month and year and methodes input validator and display.
+    3.Read the day,month and year from user using input method with the
+      object created.
+    4.Invok the display method and the display method works as,
+        4.1. Call the validator method
+            4.1.1. check the month is valid , if not return false
+            4.1.2.Check the day is valid , if not return false
+            4.1.3.For month is equal to 2 , check whether the year is 
+                  leap year or not. If it is a leap year check whether the 
+                  date is less than or equal to 29, if not return false.
+            4.1.4.If it is not leap yar check whether the day is less than or 
+                  equal to 28, if not return false.
+            4.1.5.for month equal to 4,6,9 and 11 check whether the day
+                  is less or equal to 30 , if not return false.
+            4.1.6. all the conditions are statisfied return true.
+    5. If validator method return true , then print valid else not valid.
+    6.For printing next date,
+        6.1.If the month is 2,day =29 then change the value of day=1 and 
+            increment the value of month by 1.else increment
+            date by one  .
+        6.2.If month is equal to 4,6,9 and 11 and day =30then change the value of day=1 and 
+            increment the value of month by 1  .else increment
+            date by one .
+        6.3.If month equal to 12 and date =31 then change the value of day and month
+            to 1 and increment year by and .else increment
+            date by one  .
+        6.4.else , if day =31, change the value of day to 1 and increment value of month
+            by one and print the date.else increment
+            date by one 
+    7.Print the dat
+    8.Stop.
