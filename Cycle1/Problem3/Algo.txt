@@ -1,0 +1,22 @@
+PROBLEM STATEMENT : 
+Define a class to represent bank account. Include members like name of
+depositor, account no, Type of account, balance amount in the account.
+Write C++ program with member functions to 
+a) Assign initial values 
+b)To deposit an account 
+c) To withdraw an amount after checking the balance
+d) To display name and balance
+
+ALGORITHM:
+    1.Start
+    2.Define class named bank with members name of depositor,account number
+      type of account , balance and member functions input,withdraw,checkbalance
+    3.Create an object of bank class in main functions and call the input function for 
+      values 
+    4.Ask the user , for which operation to be operated
+        4.1. If user select 1, then call the deposit function
+       
+        4.3. if user select 3, call the withdraw function and then the balance function
+        4.4. if user select 4, then call balance function
+    5. stop 
+    

@@ -20,7 +20,7 @@ Not Valid
 ALGORITHM:
     1.Start
     2.Define a class named Date with members
-      day,month and year and methodes input validator and display.
+      day,month and year and methodes input ,validator and display.
     3.Read the day,month and year from user using input method with the
       object created.
     4.Invok the display method and the display method works as,

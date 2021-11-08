@@ -74,8 +74,8 @@ void Date::display(){
     if(month==2){
        if(leapyear(year)){
             if(day==29){
-            day=1;
-            month++;
+                day=1;
+                month++;
             }else{
                 day++;
             }
@@ -123,4 +123,6 @@ int main(){
 
     date.input();
     date.display();
+
+    return 0;
 }
