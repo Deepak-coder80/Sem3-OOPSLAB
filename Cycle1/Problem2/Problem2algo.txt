@@ -35,19 +35,22 @@ ALGORITHM:
             4.1.5.for month equal to 4,6,9 and 11 check whether the day
                   is less or equal to 30 , if not return false.
             4.1.6. all the conditions are statisfied return true.
-    5. If validator method return true , then print valid else not valid.
+    5. Store the return value of validator method in a local variable called result
     6.For printing next date,
-        6.1.If the month is 2,day =29 then change the value of day=1 and 
-            increment the value of month by 1.else increment
-            date by one  .
-        6.2.If month is equal to 4,6,9 and 11 and day =30then change the value of day=1 and 
+        6.1.If the month is 2,check whether the year is leap year or not , if it is 
+            leap year then chek the day is equal to 29 or not , if it is 29 change the value 
+            of day to 1 and increment month by 1.if not increment day by 1.
+        6.2.If it is not leap year ,then chek the day is equal to 28 or not , if it is 28 change the value 
+            of day to 1 and increment month by 1.if not increment day by 1.
+        6.3.If month is equal to 4,6,9 and 11 and day =30then change the value of day=1 and 
             increment the value of month by 1  .else increment
             date by one .
-        6.3.If month equal to 12 and date =31 then change the value of day and month
+        6.4.If month equal to 12 and date =31 then change the value of day and month
             to 1 and increment year by and .else increment
             date by one  .
-        6.4.else , if day =31, change the value of day to 1 and increment value of month
+        6.5.else , if day =31, change the value of day to 1 and increment value of month
             by one and print the date.else increment
             date by one 
-    7.Print the dat
+    7.According to value of result variable print the output.If it is true then print valid 
+      and the new date updated by step 6.else print not valid.
     8.Stop.
