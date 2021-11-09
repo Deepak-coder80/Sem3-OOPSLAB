@@ -16,11 +16,11 @@ class Bank{
 };
 
 void Bank::input(){
-    cout<<"Enter your name";
+    cout<<"Enter your name : ";
     cin>>name;
-    cout<<"Enter account type";
+    cout<<"Enter account type : ";
     cin>>type;
-    cout<<"Enter account balance";
+    cout<<"Enter account balance : ";
     cin>>balance;
 }
 
@@ -36,7 +36,7 @@ void Bank::withdraw(){
     cin>>amount;
     balance -= amount;
 
-    
+    checkBalance();
 }
 
 void Bank::deposit(){
@@ -49,17 +49,20 @@ void Bank::deposit(){
 }
 
 int main(){
-    int choice;
+    int choice,option;
     //object
     Bank user1;
     user1.input();
-    cout<<"Please select an option: "<<endl;
-    cout<<"\n\t Enter 1 for deposit "<<endl;
-    cout<<"\t Enter 2 for check balance and withdraw"<<endl;
-    cout<<"\t Enter 3 for check balance\n Enter the option here:";
-    cin>>choice;
+    
+    
 
-    switch(choice){
+    do{
+        cout<<"Please select an option: "<<endl;
+        cout<<"\n\t Enter 1 for deposit "<<endl;
+        cout<<"\t Enter 2 for check balance and withdraw"<<endl;
+        cout<<"\t Enter 3 for check balance\n Enter the option here:";
+        cin>>choice;
+        switch(choice){
         case 1: 
             user1.deposit();
             break;
@@ -72,6 +75,11 @@ int main(){
         default:
             cout<<"Invalid entry:";
             break;
-    }
+        }
+
+
+        cout<<"Do you want to continue? if yes enter 1 here: ";
+        cin>>option;
+    }while(option==1);
     return 0;
 }
