@@ -44,7 +44,7 @@ ALGORITHM:
             of day to 1 and increment month by 1.if not increment day by 1.
         6.3.If month is equal to 4,6,9 and 11 and day =30then change the value of day=1 and 
             increment the value of month by 1  .else increment
-            date by one .
+            day by one .
         6.4.If month equal to 12 and date =31 then change the value of day and month
             to 1 and increment year by and .else increment
             date by one  .
