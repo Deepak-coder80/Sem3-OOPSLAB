@@ -35,9 +35,9 @@ void Bank::withdraw(){
     cin>>amount;
 
     if(balance==0){
-        cout<<"CANO'T WITHDRAW"<<endl;
+        cout<<"CANOOT WITHDRAW"<<endl;
     }else if(amount>balance){
-         cout<<"CANO'T WITHDRAW"<<endl;
+         cout<<"CANOOT WITHDRAW"<<endl;
     } else{
         balance -= amount;
         checkBalance();
