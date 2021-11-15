@@ -17,8 +17,7 @@ class Bank{
 };
 
 void Bank::initilization(){
-    cout<<"Enter your name:";
-    cin>>name;
+    name="Deepak";
     account_no=890764;
     type="savings";
     balance =0;
