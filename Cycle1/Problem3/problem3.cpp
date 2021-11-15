@@ -7,21 +7,21 @@ class Bank{
     private:
         std::string name;
         std::string type;
+        long int account_no;
         double balance;
     public:
-        void input();
+        void initilization();
         void checkBalance();
         void withdraw();
         void deposit();
 };
 
-void Bank::input(){
-    cout<<"Enter your name : ";
+void Bank::initilization(){
+    cout<<"Enter your name:";
     cin>>name;
-    cout<<"Enter account type : ";
-    cin>>type;
-    cout<<"Enter account balance : ";
-    cin>>balance;
+    account_no=890764;
+    type="savings";
+    balance =0;
 }
 
 void Bank::checkBalance(){
@@ -34,9 +34,16 @@ void Bank::withdraw(){
     checkBalance();
     cout<<"Enter amount wanted to withdraw:";
     cin>>amount;
-    balance -= amount;
 
-    checkBalance();
+    if(balance==0){
+        cout<<"CANO'T WITHDRAW"<<endl;
+    }else if(amount>balance){
+         cout<<"CANO'T WITHDRAW"<<endl;
+    } else{
+        balance -= amount;
+        checkBalance();
+    }
+    
 }
 
 void Bank::deposit(){
@@ -52,7 +59,7 @@ int main(){
     int choice,option;
     //object
     Bank user1;
-    user1.input();
+    user1.initilization();
     
     
 
