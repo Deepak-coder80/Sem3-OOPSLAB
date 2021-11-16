@@ -20,7 +20,7 @@ void Bank::initilization(){
     name="Deepak";
     account_no=890764;
     type="savings";
-    balance =0;
+    balance =500;
 }
 
 void Bank::checkBalance(){
