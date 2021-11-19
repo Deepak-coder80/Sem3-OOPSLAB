@@ -5,7 +5,9 @@ to convert to fahrenheit and display it.
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
 
 class Temperature{
     private:
