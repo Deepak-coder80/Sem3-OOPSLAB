@@ -8,8 +8,10 @@ to convert to fahrenheit and display it.
 using namespace std;
 
 class Temperature{
-    public:
+    private:
         float celsius,fahrenheit;
+    public:
+        
 
         void input(){
             cout<<"Enter the temperature : ";
