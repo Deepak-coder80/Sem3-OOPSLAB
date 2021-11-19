@@ -5,12 +5,17 @@ in the following format
 */
 #include<iostream>
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::string;
+using std::endl;
 
 class Day{
-    public:
-        int day,month,year;
+    private:
+    	int day,month,year;
         string mm;
+    public:
+        
         void input();
 
         void display();
