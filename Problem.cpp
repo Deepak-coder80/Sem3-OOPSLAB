@@ -5,12 +5,16 @@ one of the operation is performed
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
 
 class Arthematic{
-    public:
-        int a,b;
+    private:
+    	int a,b;
         float result;
+    public:
+        
         void input(){
             cout<<"Enter two number : ";
             cin>>a>>b;
