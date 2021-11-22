@@ -1,0 +1,12 @@
+Write class which contains an integer array and a static function to find the average of that array and other
+necessary member functions. Create THREE objects. Read the values into the array using one object, and find the 
+average. Let the second object modifies the value by multiplying each element by a certain multiplier. Repeat the 
+process of finding the average using first object .Using the third object arrange the numbers in ascending order and 
+print.
+
+algo:
+1.Start
+2.Define a class with members integer array and size as static members and member functions
+  input,average,multiplier , sort and display();
+3.Create 3 objects for the class in the main function. Invoke the input method for the first
+  object for 
