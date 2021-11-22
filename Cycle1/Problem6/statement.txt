@@ -1,0 +1,2 @@
+.Write a program to find shortest distance between three coordinates points, representing vertices of a triangle,
+ using inline function. Also check the validity of the sides to make a triangle.
