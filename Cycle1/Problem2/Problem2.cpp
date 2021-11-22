@@ -38,6 +38,10 @@ void Date::input(){
 }
 
 bool Date::validator(){
+
+    if(year<0){
+        return false;
+    }
     if(month<1||month>12){
         return false;
     }
