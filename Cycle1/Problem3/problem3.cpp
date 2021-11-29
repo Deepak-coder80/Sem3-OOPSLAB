@@ -87,5 +87,6 @@ int main(){
         cout<<"Do you want to continue? if yes enter 1 here: ";
         cin>>option;
     }while(option==1);
+    
     return 0;
 }

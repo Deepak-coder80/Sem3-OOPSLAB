@@ -23,7 +23,7 @@ void Triangle::input(){
 }
 
 bool Triangle::validate(){
-    if(side1<=1||side2<=1||side3<=1){
+    if(side1<1||side2<1||side3<1){
         return false;
     }
     if((side1+side2)>side3 && (side1+side3)>side2 && (side2+side3)>side1 ){
@@ -54,4 +54,6 @@ int main(){
     Triangle t1;
     t1.input();
     t1.displaySide();
+    
+    return 0;
 }

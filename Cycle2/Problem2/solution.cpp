@@ -39,7 +39,7 @@ inline void Triangle::shrt_dist(){
     d3=sqrt(pow1+pow2);
 
     //print the smallest value
-    if(d1<d2 && d2<d3){
+    if(d1<d2 && d1<d3){
         cout<<"shortest distance is :"<<d1<<" along the points ("<<x1<<","<<y1<<") and";
         cout<<"("<<x2<<","<<y2<<")"<<endl;
     }else if(d2<d3){
@@ -58,7 +58,7 @@ inline void Triangle::shrt_dist(){
 }
 
 bool Triangle::validity(){
-    if(d1<=1.0||d2<=1.0||d3<=1.0){
+    if(d1<1.0||d2<1.0||d3<1.0){
         return false;
     }
     if((d1+d2)>d3 && (d1+d3)>d2 && (d2+d3)>d1 ){
