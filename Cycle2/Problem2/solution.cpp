@@ -38,8 +38,8 @@ inline void Triangle::shrt_dist(){
     pow2=pow((y3-y2),2);
     d2=sqrt(pow1+pow2);
 
-    pow1 =pow((x3-x2),2);
-    pow2=pow((y3-y2),2);
+    pow1 =pow((x3-x1),2);
+    pow2=pow((y3-y1),2);
     d3=sqrt(pow1+pow2);
 
     //print the smallest value
