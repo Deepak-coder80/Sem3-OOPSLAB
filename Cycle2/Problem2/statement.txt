@@ -1,2 +1,16 @@
 .Write a program to find shortest distance between three coordinates points, representing vertices of a triangle,
  using inline function. Also check the validity of the sides to make a triangle.
+
+ Algorithm:
+
+ 1.Start
+ 2.Define a class Triangle with members x1,x2,x3,y1,y2,y3,d1,d2 and d3 and member functions
+   input,shrt_dist and validity.
+3.Create an object for Triangle in the main function and read the 3 cooridnates of triangle 
+  using the input function.
+4.Inovke the shrt_dist function for the object.
+    4.1. The function first find the distance d1,d2 and d3 between the 3 coordinates
+    4.2. Print the smallest distance amoung d1,d2 and d3.
+    4.3. Check the validity of triangle using validity method . 
+    4.4. If validity method return true then print triangle is valid else not valid
+5.Stop.
