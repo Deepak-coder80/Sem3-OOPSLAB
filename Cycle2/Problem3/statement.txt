@@ -1,0 +1,17 @@
+Write a function called swap() that interchanges two int values belonging
+to an object, passed as parameter to it by the calling program. Write a C++
+program to demonstrate call by value, call by reference and call by
+address.
+
+Algorithm:
+
+1.Start
+2.Read two integer value from user.
+3.Print the value
+4.Pass the value to swap_by_value function . Inside the function swap the variable and print 
+5.Print the value of variables in the main function.
+6.Pass the value to swap_by_address function . Inside the function swap the variable and print 
+7.Print the value of variables  in the main function
+8.Pass the value to swap_by_reference function . Inside the function swap the variable and print 
+9.Print the value of variable inside the main function
+10.Stop
