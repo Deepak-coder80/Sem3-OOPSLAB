@@ -15,16 +15,7 @@ inline float minimum(float data1,float data2,float data3){
 
     return data3;
 }
-bool validator(float d1,float d2,float d3){
-    if(d1<0||d2<0||d3<0){
-        return false;
-    }
-    if((d1+d2)>d3 && (d1+d3)>d2 && (d2+d3)>d1 ){
-        return true;
-    }
 
-    return false;
-}
 int main(){
     int x1,y1,x2,y2,x3,y3;
     float d1,d2,d3;
@@ -51,15 +42,16 @@ int main(){
 
     cout<<"The shortest distance between cooridinates is :"<<minimum(d1,d2,d3)<<endl;
 
-    if(validator(d1,d2,d3)){
-        cout<<"Triangle is valid"<<endl;
-    }else {
+    
+
+    float a = 0.5* (x1 * (y2 - y3)+ x2 * (y3 - y1)+ x3 * (y1 - y2));
+    
+    if(a==0.0){
         cout<<"Triangle is not-valid"<<endl;
+    }else{
+        
+        cout<<"Triangle is valid"<<endl;
     }
 
     return 0;
 }
-//Read the inputs
-//calculate the distance
-//pass to inline function
-//check validity using validator function.
