@@ -19,7 +19,7 @@ void Triangle::input(){
     cin>>x1>>y1;
     cout<<"Enter x2,y2 : ";
     cin>>x2>>y2;
-    cout<<"Enter x1,y1 : ";
+    cout<<"Enter x3,y3 : ";
     cin>>x3>>y3;
 }
 
