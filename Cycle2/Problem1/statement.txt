@@ -9,4 +9,10 @@ algo:
 2.Define a class with members integer array and size as static members and member functions
   input,average,multiplier , sort and display();
 3.Create 3 objects for the class in the main function. Invoke the input method for the first
-  object for 
+  object for read the array data.
+4.Call the average function for first object and calculate the avarage and print it.
+5.Read the number want to multipling number from user.
+6.Call the multipiler method with multipling number for the second object created.
+7.Again Call the avarage function for the first object.
+8.Call the sort method for the 3rd object and sort method will sort array using selection sort.
+9.Stop 

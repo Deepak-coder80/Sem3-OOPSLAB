@@ -22,7 +22,7 @@ public:
 
     void static avarage(){
         float  sum =0;
-        float arg =0;
+        
         for(int i=0;i<size;i++){
             sum += array[i];
             
