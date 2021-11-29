@@ -4,13 +4,11 @@
  Algorithm:
 
  1.Start
- 2.Define a class Triangle with members x1,x2,x3,y1,y2,y3,d1,d2 and d3 and member functions
-   input,shrt_dist and validity.
-3.Create an object for Triangle in the main function and read the 3 cooridnates of triangle 
-  using the input function.
-4.Inovke the shrt_dist function for the object.
-    4.1. The function first find the distance d1,d2 and d3 between the 3 coordinates
-    4.2. Print the smallest distance amoung d1,d2 and d3.
-    4.3. Check the validity of triangle using validity method . 
-    4.4. If validity method return true then print triangle is valid else not valid
-5.Stop.
+ 2.Read the 3 coordinates from the user
+ 3.Calculate distance between the coordinates and store.
+ 4.Pass the 3 distance to the inline function called minimum . it will return
+   minimum value among the distance.
+ 5.Again pass the values to validator function, it will return the triangle is 
+   possible or not.
+ 6. If the validator function return true print valid triangle else not valid.
+ 7.Stop.
