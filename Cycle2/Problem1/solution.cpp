@@ -43,7 +43,7 @@ public:
         }
         cout<<std::endl;
     }
-    void sort(){
+    void sort(int k){
         for(int i=0;i<size-1;i++){
             for(int j=i+1;j<size;j++){
                 if(array[i]>array[j]){
@@ -57,6 +57,15 @@ public:
         }
 
         display();
+
+        for(int i=0;i<size;i++){
+            array[i] = array[i]/k;
+        }
+
+        display();
+
+
+
     }
     
 };
@@ -79,7 +88,7 @@ int main(){
     cin>>multi;
     obj2.multiplier(multi);
     obj1.avarage();
-    obj3.sort();
+    obj3.sort(multi);
     
 
     return 0;
