@@ -23,7 +23,7 @@ void Measure::setData(){
 }
 
 void Measure::display(){
-    cout<<feet<<"and"<<inch<<endl;
+    cout<<feet<<"feet and"<<inch<<"Inche"<<endl;
 }
 
 void Measure::operator<(Measure m){
@@ -55,7 +55,7 @@ int main(){
     obj2.setData();
 
     obj3 = obj1+obj2;
-
+    obj3.display();
     obj1<obj2;
 
     return 0;
