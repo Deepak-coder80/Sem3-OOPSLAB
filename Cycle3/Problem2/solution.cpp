@@ -29,7 +29,7 @@ void Measure::display(){
 void Measure::operator<(Measure m){
     //convert feet into inch
     float inch1 = (feet*12)+inch;
-    float inch2 = (m.feet*12)+inch;
+    float inch2 = (m.feet*12)+m.inch;
 
     if(inch1<inch2){
         cout<<feet<<"feet and "<<inch<<"inch is less than "<<m.feet<<"feet and "<<m.inch<<"inch"<<endl;
