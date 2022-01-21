@@ -16,7 +16,7 @@ class Complex{
         friend istream & operator >> (istream &in,  Complex &c);
 };
 ostream& operator<<(ostream& out, Complex& c){
-    out<<c.real<<"+"<<c.img<<"i"<<endl;
+    out<<c.real  <<"+"<<c.img<<"i"<<endl;
 
     return out;
 }

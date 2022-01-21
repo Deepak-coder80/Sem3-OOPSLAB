@@ -95,7 +95,7 @@ int main()
             break;
         case 2:
             m2.setData();
-            meter = (double)m2;
+            meter = (double) m2;
 
             cout << "Measurement in meter = " << meter << endl;
             break;

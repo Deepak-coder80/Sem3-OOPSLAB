@@ -4,6 +4,13 @@ coordinates represented as (x,y). Define classes for both types and include memb
 functions to convert from polar to rectangular coordinates.(conversion from class to class.)
 */
 
+
+/*******************************************************************************
+Title    : Class to class
+Author   : Deepak M S 
+Date     : 
+*******************************************************************************/
+
 #include <iostream>
 #include <cmath>
 
