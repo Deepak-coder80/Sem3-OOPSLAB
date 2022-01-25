@@ -1,3 +1,10 @@
+
+/*******************************************************************************
+Title    : Operator Overloading - Stream Operators
+Author   : Deepak M S 
+Date     : 
+*******************************************************************************/
+
 #include <iostream>
 
 
@@ -16,7 +23,7 @@ class Complex{
         friend istream & operator >> (istream &in,  Complex &c);
 };
 ostream& operator<<(ostream& out, Complex& c){
-    out<<c.real  <<"+"<<c.img<<"i"<<endl;
+    out<<c.real <<"+"<<c.img <<"i"<<endl;
 
     return out;
 }

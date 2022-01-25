@@ -4,9 +4,13 @@ REG.NO. : 20220032
 ********************************************/
 
 #include<iostream>
+
 using std::cout;
 using std::cin;
 using std::endl;
+
+
+
 //function for checking the year is leap year or not
 bool leapyear(int year){
      if (year % 400 == 0){

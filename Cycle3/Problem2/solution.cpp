@@ -1,3 +1,12 @@
+
+/*******************************************************************************
+Title    : Operator Overloading - + and <
+Author   : Deepak M S 
+Roll No  : 20220032
+*******************************************************************************/
+
+
+
 #include <iostream>
 
 using std::cout;
@@ -6,7 +15,7 @@ using std::endl;
 
 class Measure{
     private:
-        float feet;
+        int feet;
         float inch;
     public:
         void setData();
@@ -23,12 +32,12 @@ void Measure::setData(){
 }
 
 void Measure::display(){
-    cout<<feet<<"feet and"<<inch<<"Inche"<<endl;
+    cout<<feet<<"feet and"<<inch<<"Inch"<<endl;
 }
 
 void Measure::operator<(Measure m){
     //convert feet into inch
-    float inch1 = (feet*12)+inch;
+    float inch1 = (feet*12)+inch;//explicit
     float inch2 = (m.feet*12)+m.inch;
 
     if(inch1<inch2){
@@ -43,6 +52,11 @@ Measure operator +(Measure m1,Measure m2){
 
     result.feet = m1.feet +m2.feet;
     result.inch = m1.inch + m2.inch;
+
+    if(result.inch>=12){
+        result.feet++;
+        result.inch -= 12;
+    }
 
     return result;
 }
