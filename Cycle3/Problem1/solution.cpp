@@ -89,8 +89,13 @@ class Date{
 				}
 			}else if((month==2)&&(day>28)){
                			if(leapyear(year)){
-				  	day=day-29;
-                  			month=3;
+							   if(day ==29){
+								   //do nothing
+							   }else {
+								   day =day-29;
+								   month=3;
+							   }
+							   
 
                			}
               			 else{
