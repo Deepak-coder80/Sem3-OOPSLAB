@@ -167,13 +167,13 @@ int main(){
     cin>>emp_id;
     cout<<"Enter pay rate :";
     cin>>pay_rate;
-    cout<<"isSlaraised or not ? enter 1 or 0";
+    cout<<"isSlaraised or not ? enter 1 or 0:";
     cin>>input;
 
-    if(input==1){
-        isSalarised=true;
-    }else if(input==0){
+    if(input==0){
         isSalarised=false;
+    }else if(input==1){
+        isSalarised=true;
     }
 
     Manager m(name,emp_id,pay_rate,isSalarised);
