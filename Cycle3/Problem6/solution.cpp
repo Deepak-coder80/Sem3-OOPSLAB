@@ -60,25 +60,29 @@ Manager::Manager(string name,int emp_id,double pay_rate,bool isSalarised):Employ
 
 void Manager::pay(){
     if(isSalaraised==false){
-        double salaray= (cur_salary*pay_rate)/100;
+       double temp= (cur_salary*pay_rate)/100;
+       double salary=0;
+      salary=cur_salary+temp;
         cout<<"\n\t\t PAY SLIP "<<endl;
         cout<<"-----------------"<<endl;
         cout<<"Empolye ID : "<<emp_id<<endl;
-        cout<<"Name : "<<name<<endl;
+        cout<<"Name : "<<" " <<name<<endl;
         cout<<"Status : "<<"Salarised*"<<endl;
-        cout<<"Salary : "<<salaray<<endl;
+        cout<<"Salary : "<<salary<<endl;
         cout<<"---------------------"<<endl;
         cout<<"*Not in Hourly mode"<<endl;
     }else{
         cout<<"Enter worked hour : ";
         cin>>wHour;
-        double salaray= ((cur_salary*pay_rate)/100)*wHour;
+         double temp= (cur_salary*pay_rate)/100*wHour;
+        double salary=0;
+        salary=cur_salary+temp;
         cout<<"\n\t\t PAY SLIP "<<endl;
         cout<<"-----------------"<<endl;
         cout<<"Empolye ID : "<<emp_id<<endl;
-        cout<<"Name : "<<name<<endl;
+        cout<<"Name : "<<" " <<name<<endl;
         cout<<"Status : "<<"Salarised*"<<endl;
-        cout<<"Salary : "<<salaray<<endl;
+        cout<<"Salary : "<<salary<<endl;
         cout<<"---------------------"<<endl;
         cout<<"*In Hourly mode"<<endl;
     }
@@ -120,19 +124,23 @@ void Supervisor::cDeparment(){
 
 void Supervisor::pay(){
    if(department=="HR"){
-       salary= (cur_salary*pay_rate)/100;
-       double incriment = (salary *10)/100;
+       double temp= (cur_salary*pay_rate)/100;
+       salary=cur_salary+temp;
+       double incriment = (salary *10)/100;       
        salary +=incriment;
    }else if(department=="Planning"){
-        salary= (cur_salary*pay_rate)/100;
+         double temp= (cur_salary*pay_rate)/100;
+         salary=cur_salary+temp;
        double incriment = (salary *15)/100;
        salary +=incriment;
    }else if(department=="Production"){
-        salary= (cur_salary*pay_rate)/100;
+         double temp= (cur_salary*pay_rate)/100;
+        salary=cur_salary+temp;
        double incriment = (salary *20)/100;
        salary +=incriment;
    }else if(department=="Testing"){
-        salary= (cur_salary*pay_rate)/100;
+       double temp= (cur_salary*pay_rate)/100;
+       salary=cur_salary+temp;
        double incriment = (salary *21)/100;
        salary +=incriment;
    }
@@ -142,7 +150,7 @@ void Supervisor::pay(){
 void Supervisor::paySlip(){
     cout<<"\n\t\t PAY SLIP "<<endl;
     cout<<"-----------------"<<endl;
-    cout<<"Empolye ID : "<<emp_id<<endl;
+    cout<<"Empolye ID : "<<emp_id<<endl;    
     cout<<"Name : "<<name<<endl;
     cout<<"Department : "<<department<<endl;
     cout<<"Salary : "<<salary<<endl;
@@ -161,13 +169,13 @@ int main(){
 
     cout<<"Enter Manger Data "<<endl;
     cout<<"Enter name :";
-    cin.ignore();
-    getline(cin,name);
+    // cin.ignore();
+    cin>>name;
     cout<<"Enter Empolye ID:";
     cin>>emp_id;
     cout<<"Enter pay rate :";
     cin>>pay_rate;
-    cout<<"isSlaraised or not ? enter 1 or 0:";
+    cout<<"isSlaraised or not ? enter 1 for yes  or 0 for no:";
     cin>>input;
 
     if(input==0){
