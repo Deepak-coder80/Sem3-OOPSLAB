@@ -18,7 +18,7 @@ class Employee{
         string name;
         int emp_id;
         double pay_rate;
-        double cur_salaray=10000;//dummy salary
+        double cur_salary=10000;//dummy salary
     public:
         Employee(string,int,double);
         void pay();
@@ -50,7 +50,7 @@ Employee::Employee(string name , int emp_id, double pay_rate){
     this->pay_rate=pay_rate;
 }
 void Employee::pay(){
-    double salaray= (cur_salaray*pay_rate)/100;
+    double salaray= (cur_salary*pay_rate)/100;
     cout<<"Salary is "<<salaray<<endl;
 }
 
@@ -60,7 +60,7 @@ Manager::Manager(string name,int emp_id,double pay_rate,bool isSalarised):Employ
 
 void Manager::pay(){
     if(isSalaraised==false){
-        double salaray= (cur_salaray*pay_rate)/100;
+        double salaray= (cur_salary*pay_rate)/100;
         cout<<"\n\t\t PAY SLIP "<<endl;
         cout<<"-----------------"<<endl;
         cout<<"Empolye ID : "<<emp_id<<endl;
@@ -72,7 +72,7 @@ void Manager::pay(){
     }else{
         cout<<"Enter worked hour : ";
         cin>>wHour;
-        double salaray= ((cur_salaray*pay_rate)/100)*wHour;
+        double salaray= ((cur_salary*pay_rate)/100)*wHour;
         cout<<"\n\t\t PAY SLIP "<<endl;
         cout<<"-----------------"<<endl;
         cout<<"Empolye ID : "<<emp_id<<endl;
@@ -120,19 +120,19 @@ void Supervisor::cDeparment(){
 
 void Supervisor::pay(){
    if(department=="HR"){
-       salary= (cur_salaray*pay_rate)/100;
+       salary= (cur_salary*pay_rate)/100;
        double incriment = (salary *10)/100;
        salary +=incriment;
    }else if(department=="Planning"){
-        salary= (cur_salaray*pay_rate)/100;
+        salary= (cur_salary*pay_rate)/100;
        double incriment = (salary *15)/100;
        salary +=incriment;
    }else if(department=="Production"){
-        salary= (cur_salaray*pay_rate)/100;
+        salary= (cur_salary*pay_rate)/100;
        double incriment = (salary *20)/100;
        salary +=incriment;
    }else if(department=="Testing"){
-        salary= (cur_salaray*pay_rate)/100;
+        salary= (cur_salary*pay_rate)/100;
        double incriment = (salary *21)/100;
        salary +=incriment;
    }

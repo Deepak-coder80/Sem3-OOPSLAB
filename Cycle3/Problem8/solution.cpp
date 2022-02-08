@@ -75,9 +75,13 @@ void Triangle::area(){
     
 }
 void Triangle::perimeter(){
-    double perimeter = (side+side1+side2);
-    cout<<"\nPerimeter of Triangle with sides "<<side<<","<<side1<<","<<side2<<" is = ";
-    cout<<perimeter<<endl;
+    if(validate()){
+        double perimeter = (side+side1+side2);
+        cout<<"\nPerimeter of Triangle with sides "<<side<<","<<side1<<","<<side2<<" is = ";
+        cout<<perimeter<<endl;
+    }else{
+        cout<<"Trangle is not valid => perimeter= 0"<<endl;
+    }
 }
 
 //RECTANGLE CLASS
